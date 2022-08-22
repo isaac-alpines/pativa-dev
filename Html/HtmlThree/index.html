@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Eğitimi | Ödev 3 - Patika.dev</title>
+    <meta name="author" content="Ishak Alpfidan">
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      body {
+         font-family: Arial;
+         padding: 20px;
+         background: #f1f1f1;
+         max-width: 70%;
+         margin: auto;
+      }
+      header {
+         border-radius: 12px;
+         border: 1px solid #e9e9e9;
+         padding: 15px;
+         text-align: left;
+         background: white;
+      }
+      header h4 {
+         margin: 6px;
+         color: steelblue;
+         display: inline;
+         font-size: 25px;
+      }
+      .left-column {
+         float: left;
+         width: 75%;
+      }
+      .right-column {
+         float: left;
+         width: 25%;
+         padding-left: 20px;
+      }
+      .card {
+         border-radius: 12px;
+         border: 1px solid #e9e9e9;
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+         padding-bottom: 30px;
+      }
+      main:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+      footer {
+         text-align: center;
+         background: #fff;
+         margin-top: 20px;
+         padding: 20px;
+         font-weight: bolder;
+         border-radius: 12px;
+         border: 1px solid #e9e9e9;
+      }
+      .post-img {
+         object-fit: cover;
+         height: 300px;
+         width: 100%;
+         border-radius: 12px;
+      }
+      .read-more {
+         font-weight: bolder;
+         background: green;
+         padding: 10px 20px;
+         color: white;
+         border-radius: 5px;
+         text-decoration: none;
+      }
+      .post-title {
+         margin-top: 0;
+         margin-bottom: 10px;
+      }
+      .post-info {
+         margin-top: 0;
+      }
+      .post-description {
+         margin-bottom: 30px;
+      }
+      .menu-items {
+         float: right;
+         list-style: none;
+         margin: 5px;
+      }
+      .menu-items li {
+         float: right;
+         margin-left: 30px;
+         margin-right: 10px;
+         font-weight: bolder;
+      }
+      .menu-items li a {
+         text-decoration: none;
+         color: chocolate;
+      }
+      .about-img {
+         width: 100%;
+         border-radius: 12px;
+      }
+      .popular-img {
+         height: 80px;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 12px;
+         margin-bottom: 7px;
+      }
+      .popular-img:hover {
+         opacity: 0.8;
+      }
+      .social-links {
+         margin: 0;
+         list-style-type: none;
+         padding: 0;
+      }
+      .social-links a {
+         text-decoration: none;
+         color: blueviolet;
+      }
+      .social-links li {
+         color: gray;
+      }
+      .sidebar-title {
+         margin-top: 0;
+      }
+      @media screen and (max-width: 800px) {
+         .left-column, .right-column {
+            width: 100%;
+            padding: 0;
+         }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h4>
+      FAYDALI BİLGİLER</h2>
+      <ul class="menu-items">
+        <li><a href="#">İletişim</a></li>
+        <li><a href="#">Galeri</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Ana Sayfa</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="left-column">
+        <div class="card">
+          <h2 class="post-title">EVDE YAPILABİLECEK HOBİLER</h2>
+          <h5 class="post-info"><strong>Tarih: </strong>30 Mart 2022 | <strong>Yazar: </strong> İshak Alpfidan</h5>
+          <img class="post-img" src="https://www.airwick.com.tr/media/98716/hobi.jpg">
+          <p class="post-description">Evde kendinize ait bir hobi alanı olması çok önemli. Air Wick ile Evde yapabileceğiniz hobiler hakkında fikir sahibi olmak ister misiniz?</p>
+          <a class="read-more" href="#">Devamını Oku ></a>
+        </div>
+        <div class="card">
+          <h2 class="post-title">DUVAR NASIL BOYANIR?</h2>
+          <h5 class="post-info"><strong>Tarih: </strong>29 Mart 2022 | <strong>Yazar: </strong> İshak Alpfidan</h5>
+          <img class="post-img" src="https://www.airwick.com.tr/media/98630/duvar-boyama.jpg">
+          <p class="post-description">Duvar boyamak ustalık ister. Peki duvar boyamanın inceliklerini öğrenip Air Wick ile son dokunuşları yapmaya ne dersiniz?</p>
+          <a class="read-more" href="#">Devamını Oku ></a>
+        </div>
+        <div class="card">
+          <h2 class="post-title">LAVANTA KOKUSU VE FAYDALARI</h2>
+          <h5 class="post-info"><strong>Tarih: </strong>28 Mart 2022 | <strong>Yazar: </strong> İshak Alpfidan</h5>
+          <img class="post-img" src="https://www.airwick.com.tr/media/8914/beautiful-4358349_1280.jpg">
+          <p class="post-description">Evinizi çok seviyor ve dekoratif ögelerle düzenlemekten keyif mi alıyorsunuz? Ancak herkes gibi siz de özenerek dizayn ettiğiniz odalarınızd…</p>
+          <a class="read-more" href="#">Devamını Oku ></a>
+        </div>
+        <div class="card">
+          <h2 class="post-title">LRUTUBET KOKUSU NASIL GİDER?</h2>
+          <h5 class="post-info"><strong>Tarih: </strong>27 Mart 2022 | <strong>Yazar: </strong> İshak Alpfidan</h5>
+          <img class="post-img" src="https://www.airwick.com.tr/media/8919/brick-wall-3194516_640.jpg">
+          <p class="post-description">Ev yaşamında neredeyse herkesin başına gelebilecek ortak kötü tecrübeler bulunuyor. Bunlardan biri de nedeni tam olarak anlaşılamayan rutube…</p>
+          <a class="read-more" href="#">Devamını Oku ></a>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="card">
+          <h2 class="sidebar-title">Hakkımda</h2>
+          <img class="about-img" src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corporis tempora vitae ipsam reiciendis cupiditate.</p>
+        </div>
+        <div class="card">
+          <h3 class="sidebar-title">Öne Çıkanlar</h3>
+          <a href="#"><img class="popular-img" src="https://www.airwick.com.tr/media/98716/hobi.jpg"></a>
+          <br>
+          <a href="#"><img class="popular-img" src="https://www.airwick.com.tr/media/98630/duvar-boyama.jpg"></a>
+          <br>
+          <a href="#"><img class="popular-img" src="https://www.airwick.com.tr/media/8914/beautiful-4358349_1280.jpg"></a>
+        </div>
+        <div class="card">
+          <h3 class="sidebar-title">Beni Takip Edin</h3>
+          <ul class="social-links">
+            <li>Patika.dev: <a href="https://app.patika.dev/isaac-alpines">/İshak Alpfidan</a></li>
+            <hr>
+            <li>GitHub: <a href="https://github.com/isaac-alpines">/İshak Alpfidan</a></li>
+            <hr>
+            <li>Instagram: <a href="https://www.instagram.com/isaac.alpines/">/İshak Alpfidan</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      @2022 | <a href="https://app.patika.dev/isaac-alpines">İshak Alpfidan</a> | Patika.dev
+    </footer>
+  </body>
+</html>
